@@ -43,7 +43,10 @@ public class Main {
 			 for (int i = 0; i <= doc.getNumberOfPages(); i++) {
 				 reader.setStartPage(i);
 				 reader.setEndPage(i);
-				 reader.getText(doc);
+				 //reader.getText(doc);
+			 if (reader.getText(doc).contains("Procuração") && reader.getText(doc).contains("SUMÁRIO")) {
+					 System.out.println(reader.getText(doc));
+				}
 				 if (reader.getText(doc).contains("de2ae66") && !reader.getText(doc).contains("SUMÁRIO")) {
 					// System.out.println(reader.getText(doc));
 					 PDFRenderer renderer = new PDFRenderer(doc);
@@ -54,7 +57,7 @@ public class Main {
 					 System.out.println(result);
 				 }
 			 }
-			 
+			 doc.close();
 		 } 
 		 catch (IOException e) {
 			 //e.printStackTrace();
