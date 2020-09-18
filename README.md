@@ -4,7 +4,7 @@
 - PdfBox
 - Tess4J-3.4.8
 
-## Instalation
+## installation
 
 Clone this repository with the command:
 
@@ -14,13 +14,13 @@ Import as a `maven project` and wait for it to build dependencies
 
 Change this path to your the right one for you system, this folder comes inside the project.
 
-<img src="assets/path-demo.jpg" width="50%">
+<img src="assets/path-demo.jpg" width="100%">
 
 ## Usage
 
 Insert the file you would like to read
 
-<img src="assets/file-demo.jpg" width="50%">
+<img src="assets/file-demo.jpg" width="100%">
 
 Search for a word in PdfBox method:
 
@@ -36,10 +36,10 @@ Check your console for both outcomes:
 
 ### PDFBOX
 
-<img src="assets/pdfoutcome.jpg" width="50%">
+<img src="assets/pdfoutcome.jpg" width="70%">
 
 ### OCR
 
-<img src="assets/ocr-outcome.jpg" width="50%">
+<img src="assets/ocr-outcome.jpg" width="100%">
 
 > Results for OCR may vary on color, quality or dpi settings for the pdf or image file affecting the final result
